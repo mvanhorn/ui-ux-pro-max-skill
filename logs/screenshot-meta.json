@@ -1,0 +1,18 @@
+{
+  "fintech-ledger": {
+    "height": 2668
+  },
+  "kids-playroom": {
+    "height": 2685
+  },
+  "dark-night-ide": {
+    "height": 2704
+  },
+  "hostile-name": {
+    "height": 2685
+  },
+  "offlineFonts": {
+    "body": "\"IBM Plex Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+    "heading": "\"JetBrains Mono\", system-ui, -apple-system, \"Segoe UI\", sans-serif"
+  }
+}

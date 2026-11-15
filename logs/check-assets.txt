@@ -1,0 +1,6 @@
+
+> ui-ux-pro-max-cli@2.5.0 check:assets
+> node scripts/sync-assets.mjs --check
+
+Assets are in sync.
+CHECK_ASSETS_EXIT:0

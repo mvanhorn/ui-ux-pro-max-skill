@@ -1,0 +1,27 @@
+[
+  {
+    "file": "/tmp/ds-demo/previews/design-system/ledger/preview.html",
+    "violations": [],
+    "passes": 21,
+    "incomplete": 0
+  },
+  {
+    "file": "/tmp/ds-demo/previews/design-system/playroom/preview.html",
+    "violations": [],
+    "passes": 21,
+    "incomplete": 0
+  },
+  {
+    "file": "/tmp/ds-demo/previews/design-system/night-ide/preview.html",
+    "violations": [],
+    "passes": 21,
+    "incomplete": 0
+  },
+  {
+    "file": "/tmp/ds-demo/previews/hostile/preview.html",
+    "violations": [],
+    "passes": 21,
+    "incomplete": 0
+  }
+]
+AXE_CLEAN

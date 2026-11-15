@@ -1,0 +1,12 @@
+
+> ui-ux-pro-max-cli@2.5.0 sync:assets
+> node scripts/sync-assets.mjs
+
+Synced CLI assets, .claude/skills/ui-ux-pro-max data/scripts, and gallery styles from src/ui-ux-pro-max, plus 6 sub-skills (normalized to LF).
+SYNC_EXIT:0
+
+> ui-ux-pro-max-cli@2.5.0 check:assets
+> node scripts/sync-assets.mjs --check
+
+Assets are in sync.
+CHECK_AFTER_SYNC_EXIT:0

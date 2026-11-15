@@ -1,0 +1,21 @@
+test_preview_respects_force (src.ui-ux-pro-max.scripts.tests.test_design_system_preview.TestPreviewCli.test_preview_respects_force) ... ok
+test_preview_still_writes_when_master_already_exists (src.ui-ux-pro-max.scripts.tests.test_design_system_preview.TestPreviewCli.test_preview_still_writes_when_master_already_exists) ... ok
+test_preview_with_persist_writes_next_to_master (src.ui-ux-pro-max.scripts.tests.test_design_system_preview.TestPreviewCli.test_preview_with_persist_writes_next_to_master) ... ok
+test_preview_without_design_system_errors (src.ui-ux-pro-max.scripts.tests.test_design_system_preview.TestPreviewCli.test_preview_without_design_system_errors) ... ok
+test_preview_without_output_dir_uses_temp_file (src.ui-ux-pro-max.scripts.tests.test_design_system_preview.TestPreviewCli.test_preview_without_output_dir_uses_temp_file) ... ok
+test_preview_without_persist_uses_output_dir (src.ui-ux-pro-max.scripts.tests.test_design_system_preview.TestPreviewCli.test_preview_without_persist_uses_output_dir) ... ok
+test_printed_ratios_match_generator (src.ui-ux-pro-max.scripts.tests.test_design_system_preview.TestPreviewContrast.test_printed_ratios_match_generator) ... ok
+test_dark_system_renders_on_its_dark_surfaces (src.ui-ux-pro-max.scripts.tests.test_design_system_preview.TestPreviewDarkMode.test_dark_system_renders_on_its_dark_surfaces) ... ok
+test_cli_hostile_project_name_is_escaped (src.ui-ux-pro-max.scripts.tests.test_design_system_preview.TestPreviewEscaping.test_cli_hostile_project_name_is_escaped) ... ok
+test_hostile_project_name_is_escaped (src.ui-ux-pro-max.scripts.tests.test_design_system_preview.TestPreviewEscaping.test_hostile_project_name_is_escaped) ... ok
+test_invalid_hex_is_not_emitted_as_css_color (src.ui-ux-pro-max.scripts.tests.test_design_system_preview.TestPreviewNoScriptInjectionInCss.test_invalid_hex_is_not_emitted_as_css_color) ... ok
+test_google_fonts_link_when_pairing_has_a_url (src.ui-ux-pro-max.scripts.tests.test_design_system_preview.TestPreviewStructure.test_google_fonts_link_when_pairing_has_a_url) ... ok
+test_lang_landmark_and_labels (src.ui-ux-pro-max.scripts.tests.test_design_system_preview.TestPreviewStructure.test_lang_landmark_and_labels) ... ok
+test_palette_swatches_cover_every_present_role (src.ui-ux-pro-max.scripts.tests.test_design_system_preview.TestPreviewStructure.test_palette_swatches_cover_every_present_role) ... ok
+test_type_buttons_card_form_style_and_anti_patterns (src.ui-ux-pro-max.scripts.tests.test_design_system_preview.TestPreviewStructure.test_type_buttons_card_form_style_and_anti_patterns) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.447s
+
+OK
+PREVIEW_UNITTEST_EXIT:0

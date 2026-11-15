@@ -1,0 +1,172 @@
+
+Running 56 tests using 2 workers
+
+
+(node:8594) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:8593) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/56] [chromium] › tests/e2e/agent-query-contract.spec.ts:18:1 › rendered guides expose the deterministic query contract
+[2/56] [chromium] › tests/e2e/agent-query-contract.spec.ts:7:1 › all platform metadata uses one accurate activation description
+[3/56] [chromium] › tests/e2e/agent-query-contract.spec.ts:42:1 › rendered examples encode mode, retry, and persistence boundaries
+[4/56] [chromium] › tests/e2e/agent-query-contract.spec.ts:53:1 › quick-reference copy matches whether the section is inlined
+[5/56] [chromium] › tests/e2e/banner-design-path-contract.spec.ts:46:3 › .claude/skills/banner-design/SKILL.md is self-contained
+[6/56] [chromium] › tests/e2e/banner-design-path-contract.spec.ts:46:3 › cli/assets/skills/banner-design/SKILL.md is self-contained
+[7/56] [chromium] › tests/e2e/banner-design-path-contract.spec.ts:51:1 › Claude CLI installation preserves the banner path contract
+[8/56] [chromium] › tests/e2e/banner-design-path-contract.spec.ts:61:1 › the bundled banner skill matches the plugin source
+[9/56] [chromium] › tests/e2e/copilot-skills.spec.ts:34:1 › copilot SKILL.md has the name and description frontmatter Agent Skills require
+[10/56] [chromium] › tests/e2e/copilot-skills.spec.ts:45:1 › copilot dry-run plans the .github/skills layout and writes nothing
+[11/56] [chromium] › tests/e2e/copilot-skills.spec.ts:74:1 › copilot --global plans the personal ~/.copilot/skills folder
+[12/56] [chromium] › tests/e2e/copilot-skills.spec.ts:101:1 › copilot installs the skill, its data and the sub-skills under .github/skills
+[13/56] [chromium] › tests/e2e/copilot-skills.spec.ts:86:1 › copilot --global installs to and uninstalls from ~/.copilot/skills
+[14/56] [chromium] › tests/e2e/copilot-skills.spec.ts:116:1 › copilot replaces an earlier .github/prompts install and keeps the user's prompts
+[chromium] › tests/e2e/copilot-skills.spec.ts:116:1 › copilot replaces an earlier .github/prompts install and keeps the user's prompts
+  Removed legacy install: /tmp/uipro-copilot-migrate-l8o8Xo/.github/prompts/ui-ux-pro-max.prompt.md
+
+  Removed legacy install: /tmp/uipro-copilot-migrate-l8o8Xo/.github/prompts/ui-ux-pro-max
+
+  Removed legacy install: /tmp/uipro-copilot-migrate-l8o8Xo/.github/prompts/design
+
+[15/56] [chromium] › tests/e2e/copilot-skills.spec.ts:142:1 › a .github folder without Copilot files does not detect copilot
+[16/56] [chromium] › tests/e2e/copilot-skills.spec.ts:159:3 › .github/copilot-instructions.md detects copilot
+[17/56] [chromium] › tests/e2e/copilot-skills.spec.ts:159:3 › .github/instructions detects copilot
+[18/56] [chromium] › tests/e2e/copilot-skills.spec.ts:159:3 › .github/prompts detects copilot
+[19/56] [chromium] › tests/e2e/copilot-skills.spec.ts:159:3 › .github/agents detects copilot
+[20/56] [chromium] › tests/e2e/copilot-skills.spec.ts:159:3 › .github/skills detects copilot
+[21/56] [chromium] › tests/e2e/copilot-skills.spec.ts:159:3 › .github/hooks detects copilot
+[22/56] [chromium] › tests/e2e/copilot-skills.spec.ts:159:3 › .copilot/skills detects copilot
+[23/56] [chromium] › tests/e2e/copilot-skills.spec.ts:173:1 › uninstall removes the .github/skills install and an earlier .github/prompts one
+[24/56] [chromium] › tests/e2e/detect.spec.ts:7:1 › a sole .agents directory detects every consumer and still suggests codex
+[25/56] [chromium] › tests/e2e/detect.spec.ts:20:1 › openclaw has a platform description
+[26/56] [chromium] › tests/e2e/detect.spec.ts:24:1 › a sole .autoclaw directory detects and suggests autoclaw
+[27/56] [chromium] › tests/e2e/detect.spec.ts:34:1 › autoclaw has a platform description
+[28/56] [chromium] › tests/e2e/detect.spec.ts:40:1 › an installed skills/ui-ux-pro-max directory detects autoclaw
+[29/56] [chromium] › tests/e2e/dry-run.spec.ts:12:1 › dry-run plan lists the install actions for one platform
+[30/56] [chromium] › tests/e2e/dry-run.spec.ts:25:1 › dry-run plan writes nothing to the target directory
+[31/56] [chromium] › tests/e2e/dry-run.spec.ts:35:1 › dry-run skips all install actions for an existing skill unless forced
+[chromium] › tests/e2e/dry-run.spec.ts:35:1 › dry-run skips all install actions for an existing skill unless forced
+  Skipped (already exists): /tmp/uipro-dry-run-existing-595W6G/.opencode/skills/ui-ux-pro-max/SKILL.md — use --force to overwrite
+
+[32/56] [chromium] › tests/e2e/dry-run.spec.ts:59:3 › dry-run matches the sub-skills copied without --force
+[33/56] [chromium] › tests/e2e/dry-run.spec.ts:59:3 › dry-run matches the sub-skills copied with --force
+[34/56] [chromium] › tests/e2e/dry-run.spec.ts:89:1 › dry-run omits the sub-skill copy action when all target directories exist
+[35/56] [chromium] › tests/e2e/dry-run.spec.ts:111:1 › dry-run plan supports the zcode platform layout
+[36/56] [chromium] › tests/e2e/dry-run.spec.ts:124:1 › dry-run plan supports the kimi platform layout
+[37/56] [chromium] › tests/e2e/dry-run.spec.ts:137:1 › dry-run plan keeps amazonq data and sub-skills out of the rules folder
+[38/56] [chromium] › tests/e2e/dry-run.spec.ts:152:1 › dry-run plan supports the openclaw platform layout
+[39/56] [chromium] › tests/e2e/dry-run.spec.ts:165:1 › dry-run plan for all platforms covers every unique layout
+[40/56] [chromium] › tests/e2e/kimi-skills.spec.ts:22:1 › kimi SKILL.md has the name and description frontmatter Kimi Code requires
+[41/56] [chromium] › tests/e2e/kimi-skills.spec.ts:31:1 › kimi installs the skill, its data and the sub-skills under .kimi-code/skills
+[42/56] [chromium] › tests/e2e/kimi-skills.spec.ts:45:1 › a .kimi-code directory is detected as kimi
+[43/56] [chromium] › tests/e2e/legacy-cleanup.spec.ts:14:3 › legacy install removes temporary downloads after success
+[chromium] › tests/e2e/legacy-cleanup.spec.ts:14:3 › legacy install removes temporary downloads after success
+
+UI/UX Pro Max Installer
+
+
+info Installing for: Claude Code (.claude/skills/)
+
+
+- Installing files...
+
+✔ Installed from GitHub release!
+
+
+info Installed folders:
+
+  + .claude
+
+
+
+success UI/UX Pro Max installed successfully!
+
+
+
+Next steps:
+
+  1. Restart your AI coding assistant
+
+  2. Try: "Build a landing page for a SaaS product"
+
+
+
+[44/56] [chromium] › tests/e2e/legacy-cleanup.spec.ts:14:3 › legacy install removes temporary downloads after download failure
+[chromium] › tests/e2e/legacy-cleanup.spec.ts:14:3 › legacy install removes temporary downloads after download failure
+- Installing files...
+
+UI/UX Pro Max Installer
+
+
+info Installing for: Claude Code (.claude/skills/)
+
+
+
+⚠ GitHub download failed, using template generation...
+
+✔ Installed from bundled assets!
+
+
+info Installed folders:
+
+
+
+success UI/UX Pro Max installed successfully!
+
+
+
+Next steps:
+
+  1. Restart your AI coding assistant
+
+  2. Try: "Build a landing page for a SaaS product"
+
+
+
+[45/56] [chromium] › tests/e2e/legacy-cleanup.spec.ts:14:3 › legacy install removes temporary downloads after extraction failure
+[chromium] › tests/e2e/legacy-cleanup.spec.ts:14:3 › legacy install removes temporary downloads after extraction failure
+
+UI/UX Pro Max Installer
+
+
+info Installing for: Claude Code (.claude/skills/)
+
+
+- Installing files...
+
+⚠ Download failed, using template generation...
+
+✔ Installed from bundled assets!
+
+
+info Installed folders:
+
+
+
+success UI/UX Pro Max installed successfully!
+
+
+
+Next steps:
+
+  1. Restart your AI coding assistant
+
+  2. Try: "Build a landing page for a SaaS product"
+
+
+
+[46/56] [chromium] › tests/e2e/preview.spec.ts:18:3 › generated preview pages › xiaomaomi-app.html renders without console errors
+[47/56] [chromium] › tests/e2e/template-script-paths.spec.ts:21:3 › claude renders project-root and global script paths
+[48/56] [chromium] › tests/e2e/template-script-paths.spec.ts:21:3 › codex renders project-root and global script paths
+[49/56] [chromium] › tests/e2e/template-script-paths.spec.ts:21:3 › kiro renders project-root and global script paths
+[50/56] [chromium] › tests/e2e/template-script-paths.spec.ts:21:3 › droid renders project-root and global script paths
+[51/56] [chromium] › tests/e2e/template-script-paths.spec.ts:21:3 › zcode renders project-root and global script paths
+[52/56] [chromium] › tests/e2e/template-script-paths.spec.ts:21:3 › kimi renders project-root and global script paths
+[53/56] [chromium] › tests/e2e/template-script-paths.spec.ts:21:3 › amazonq renders project-root and global script paths
+[54/56] [chromium] › tests/e2e/template-script-paths.spec.ts:21:3 › openclaw renders project-root and global script paths
+[55/56] [chromium] › tests/e2e/template-script-paths.spec.ts:38:1 › autoclaw renders workspace skills locally and ~/.openclaw-autoclaw/skills globally
+[56/56] [chromium] › tests/e2e/template-script-paths.spec.ts:54:1 › copilot renders .github/skills paths locally and ~/.copilot/skills globally
+  56 passed (1.7s)
+PLAYWRIGHT_EXIT:0

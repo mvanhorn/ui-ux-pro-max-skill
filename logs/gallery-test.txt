@@ -1,0 +1,63 @@
+
+> style-gallery@1.0.0 test
+> tsc -p tsconfig.test.json && node --test .test-dist/lib/parseStyles.test.js .test-dist/components/metadata-badges.test.js
+
+TAP version 13
+# Subtest: extracts only the requested controlled taxonomy value
+ok 1 - extracts only the requested controlled taxonomy value
+  ---
+  duration_ms: 0.681758
+  type: 'test'
+  ...
+# Subtest: maps cost, risk, and mode support levels to semantic variants
+ok 2 - maps cost, risk, and mode support levels to semantic variants
+  ---
+  duration_ms: 0.123095
+  type: 'test'
+  ...
+# Subtest: renders concise labels with explicit accessible meaning
+ok 3 - renders concise labels with explicit accessible meaning
+  ---
+  duration_ms: 2.906774
+  type: 'test'
+  ...
+# Subtest: filter groups expose names and selected state
+ok 4 - filter groups expose names and selected state
+  ---
+  duration_ms: 0.885698
+  type: 'test'
+  ...
+# Subtest: parses taxonomy fields by header name
+ok 5 - parses taxonomy fields by header name
+  ---
+  duration_ms: 1.274001
+  type: 'test'
+  ...
+# Subtest: gallery defaults to active and exposes explicit status views
+ok 6 - gallery defaults to active and exposes explicit status views
+  ---
+  duration_ms: 1.647848
+  type: 'test'
+  ...
+# Subtest: parser rejects missing or unknown status
+ok 7 - parser rejects missing or unknown status
+  ---
+  duration_ms: 0.501301
+  type: 'test'
+  ...
+# Subtest: parses quoted multiline fields as one record
+ok 8 - parses quoted multiline fields as one record
+  ---
+  duration_ms: 0.211541
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 57.836366
+GALLERY_TEST_EXIT:0
