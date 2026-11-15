@@ -1,0 +1,766 @@
+# Demo capture — design-system token export
+# Working directory: /workspace
+
+$ python3 src/ui-ux-pro-max/scripts/search.py "fintech dashboard" --design-system --tokens dtcg
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "$description": "Design tokens for FINTECH DASHBOARD (dark mode).",
+  "color": {
+    "primary": {
+      "$value": "#0F172A",
+      "$type": "color"
+    },
+    "on-primary": {
+      "$value": "#FFFFFF",
+      "$type": "color"
+    },
+    "secondary": {
+      "$value": "#1E293B",
+      "$type": "color"
+    },
+    "on-secondary": {
+      "$value": "#FFFFFF",
+      "$type": "color"
+    },
+    "accent": {
+      "$value": "#22C55E",
+      "$type": "color"
+    },
+    "on-accent": {
+      "$value": "#0F172A",
+      "$type": "color"
+    },
+    "background": {
+      "$value": "#020617",
+      "$type": "color"
+    },
+    "foreground": {
+      "$value": "#F8FAFC",
+      "$type": "color"
+    },
+    "card": {
+      "$value": "#0E1223",
+      "$type": "color"
+    },
+    "card-foreground": {
+      "$value": "#F8FAFC",
+      "$type": "color"
+    },
+    "muted": {
+      "$value": "#1A1E2F",
+      "$type": "color"
+    },
+    "muted-foreground": {
+      "$value": "#94A3B8",
+      "$type": "color"
+    },
+    "border": {
+      "$value": "#334155",
+      "$type": "color"
+    },
+    "destructive": {
+      "$value": "#EF4444",
+      "$type": "color"
+    },
+    "on-destructive": {
+      "$value": "#000000",
+      "$type": "color"
+    },
+    "ring": {
+      "$value": "#FFFFFF",
+      "$type": "color"
+    }
+  },
+  "font": {
+    "heading": {
+      "$value": "\"Fira Code\", monospace",
+      "$type": "fontFamily"
+    },
+    "body": {
+      "$value": "\"Fira Sans\", sans-serif",
+      "$type": "fontFamily"
+    }
+  },
+  "semantic": {
+    "color": {
+      "primary": {
+        "$value": "{color.primary}",
+        "$type": "color"
+      },
+      "on-primary": {
+        "$value": "{color.on-primary}",
+        "$type": "color"
+      },
+      "secondary": {
+        "$value": "{color.secondary}",
+        "$type": "color"
+      },
+      "on-secondary": {
+        "$value": "{color.on-secondary}",
+        "$type": "color"
+      },
+      "accent": {
+        "$value": "{color.accent}",
+        "$type": "color"
+      },
+      "on-accent": {
+        "$value": "{color.on-accent}",
+        "$type": "color"
+      },
+      "background": {
+        "$value": "{color.background}",
+        "$type": "color"
+      },
+      "foreground": {
+        "$value": "{color.foreground}",
+        "$type": "color"
+      },
+      "card": {
+        "$value": "{color.card}",
+        "$type": "color"
+      },
+      "card-foreground": {
+        "$value": "{color.card-foreground}",
+        "$type": "color"
+      },
+      "muted": {
+        "$value": "{color.muted}",
+        "$type": "color"
+      },
+      "muted-foreground": {
+        "$value": "{color.muted-foreground}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.border}",
+        "$type": "color"
+      },
+      "destructive": {
+        "$value": "{color.destructive}",
+        "$type": "color"
+      },
+      "on-destructive": {
+        "$value": "{color.on-destructive}",
+        "$type": "color"
+      },
+      "ring": {
+        "$value": "{color.ring}",
+        "$type": "color"
+      }
+    },
+    "font": {
+      "heading": {
+        "$value": "{font.heading}",
+        "$type": "fontFamily"
+      },
+      "body": {
+        "$value": "{font.body}",
+        "$type": "fontFamily"
+      }
+    }
+  }
+}
+[exit 0]
+
+$ python3 src/ui-ux-pro-max/scripts/search.py "fintech dashboard" --design-system --tokens css
+/* Design Tokens - Auto-generated */
+/* Do not edit directly - modify tokens.json instead */
+
+/* === PRIMITIVES === */
+:root {
+
+}
+
+/* === SEMANTIC === */
+:root {
+  --color-primary: #0F172A;
+  --color-on-primary: #FFFFFF;
+  --color-secondary: #1E293B;
+  --color-on-secondary: #FFFFFF;
+  --color-accent: #22C55E;
+  --color-on-accent: #0F172A;
+  --color-background: #020617;
+  --color-foreground: #F8FAFC;
+  --color-card: #0E1223;
+  --color-card-foreground: #F8FAFC;
+  --color-muted: #1A1E2F;
+  --color-muted-foreground: #94A3B8;
+  --color-border: #334155;
+  --color-destructive: #EF4444;
+  --color-on-destructive: #000000;
+  --color-ring: #FFFFFF;
+  --font-heading: "Fira Code", monospace;
+  --font-body: "Fira Sans", sans-serif;
+}
+
+/* === COMPONENTS === */
+:root {
+
+}
+[exit 0]
+
+$ python3 src/ui-ux-pro-max/scripts/search.py "fintech dashboard" --design-system --persist --tokens dtcg -p "Ledgerly" --output-dir /tmp/demo-run
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "$description": "Design tokens for Ledgerly (dark mode).",
+  "color": {
+    "primary": {
+      "$value": "#0F172A",
+      "$type": "color"
+    },
+    "on-primary": {
+      "$value": "#FFFFFF",
+      "$type": "color"
+    },
+    "secondary": {
+      "$value": "#1E293B",
+      "$type": "color"
+    },
+    "on-secondary": {
+      "$value": "#FFFFFF",
+      "$type": "color"
+    },
+    "accent": {
+      "$value": "#22C55E",
+      "$type": "color"
+    },
+    "on-accent": {
+      "$value": "#0F172A",
+      "$type": "color"
+    },
+    "background": {
+      "$value": "#020617",
+      "$type": "color"
+    },
+    "foreground": {
+      "$value": "#F8FAFC",
+      "$type": "color"
+    },
+    "card": {
+      "$value": "#0E1223",
+      "$type": "color"
+    },
+    "card-foreground": {
+      "$value": "#F8FAFC",
+      "$type": "color"
+    },
+    "muted": {
+      "$value": "#1A1E2F",
+      "$type": "color"
+    },
+    "muted-foreground": {
+      "$value": "#94A3B8",
+      "$type": "color"
+    },
+    "border": {
+      "$value": "#334155",
+      "$type": "color"
+    },
+    "destructive": {
+      "$value": "#EF4444",
+      "$type": "color"
+    },
+    "on-destructive": {
+      "$value": "#000000",
+      "$type": "color"
+    },
+    "ring": {
+      "$value": "#FFFFFF",
+      "$type": "color"
+    }
+  },
+  "font": {
+    "heading": {
+      "$value": "\"Fira Code\", monospace",
+      "$type": "fontFamily"
+    },
+    "body": {
+      "$value": "\"Fira Sans\", sans-serif",
+      "$type": "fontFamily"
+    }
+  },
+  "semantic": {
+    "color": {
+      "primary": {
+        "$value": "{color.primary}",
+        "$type": "color"
+      },
+      "on-primary": {
+        "$value": "{color.on-primary}",
+        "$type": "color"
+      },
+      "secondary": {
+        "$value": "{color.secondary}",
+        "$type": "color"
+      },
+      "on-secondary": {
+        "$value": "{color.on-secondary}",
+        "$type": "color"
+      },
+      "accent": {
+        "$value": "{color.accent}",
+        "$type": "color"
+      },
+      "on-accent": {
+        "$value": "{color.on-accent}",
+        "$type": "color"
+      },
+      "background": {
+        "$value": "{color.background}",
+        "$type": "color"
+      },
+      "foreground": {
+        "$value": "{color.foreground}",
+        "$type": "color"
+      },
+      "card": {
+        "$value": "{color.card}",
+        "$type": "color"
+      },
+      "card-foreground": {
+        "$value": "{color.card-foreground}",
+        "$type": "color"
+      },
+      "muted": {
+        "$value": "{color.muted}",
+        "$type": "color"
+      },
+      "muted-foreground": {
+        "$value": "{color.muted-foreground}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.border}",
+        "$type": "color"
+      },
+      "destructive": {
+        "$value": "{color.destructive}",
+        "$type": "color"
+      },
+      "on-destructive": {
+        "$value": "{color.on-destructive}",
+        "$type": "color"
+      },
+      "ring": {
+        "$value": "{color.ring}",
+        "$type": "color"
+      }
+    },
+    "font": {
+      "heading": {
+        "$value": "{font.heading}",
+        "$type": "fontFamily"
+      },
+      "body": {
+        "$value": "{font.body}",
+        "$type": "fontFamily"
+      }
+    }
+  }
+}
+
+============================================================
+✅ Design system persisted to /tmp/demo-run/design-system/ledgerly/
+   📄 /tmp/demo-run/design-system/ledgerly/MASTER.md
+   📄 /tmp/demo-run/design-system/ledgerly/tokens.json
+
+📖 Usage: When building a page, check /tmp/demo-run/design-system/ledgerly/pages/[page].md first.
+   If it exists, its rules override MASTER.md. Otherwise, use MASTER.md.
+============================================================
+[exit 0]
+
+$ ls -la /tmp/demo-run/design-system/ledgerly
+total 24
+drwxr-xr-x 3 ubuntu ubuntu 4096 Nov 15 17:41 .
+drwxr-xr-x 3 ubuntu ubuntu 4096 Nov 15 17:41 ..
+-rw------- 1 ubuntu ubuntu 6128 Nov 15 17:41 MASTER.md
+drwxr-xr-x 2 ubuntu ubuntu 4096 Nov 15 17:41 pages
+-rw------- 1 ubuntu ubuntu 3316 Nov 15 17:41 tokens.json
+[exit 0]
+
+$ cat /tmp/demo-run/design-system/ledgerly/tokens.json
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "$description": "Design tokens for Ledgerly (dark mode).",
+  "color": {
+    "primary": {
+      "$value": "#0F172A",
+      "$type": "color"
+    },
+    "on-primary": {
+      "$value": "#FFFFFF",
+      "$type": "color"
+    },
+    "secondary": {
+      "$value": "#1E293B",
+      "$type": "color"
+    },
+    "on-secondary": {
+      "$value": "#FFFFFF",
+      "$type": "color"
+    },
+    "accent": {
+      "$value": "#22C55E",
+      "$type": "color"
+    },
+    "on-accent": {
+      "$value": "#0F172A",
+      "$type": "color"
+    },
+    "background": {
+      "$value": "#020617",
+      "$type": "color"
+    },
+    "foreground": {
+      "$value": "#F8FAFC",
+      "$type": "color"
+    },
+    "card": {
+      "$value": "#0E1223",
+      "$type": "color"
+    },
+    "card-foreground": {
+      "$value": "#F8FAFC",
+      "$type": "color"
+    },
+    "muted": {
+      "$value": "#1A1E2F",
+      "$type": "color"
+    },
+    "muted-foreground": {
+      "$value": "#94A3B8",
+      "$type": "color"
+    },
+    "border": {
+      "$value": "#334155",
+      "$type": "color"
+    },
+    "destructive": {
+      "$value": "#EF4444",
+      "$type": "color"
+    },
+    "on-destructive": {
+      "$value": "#000000",
+      "$type": "color"
+    },
+    "ring": {
+      "$value": "#FFFFFF",
+      "$type": "color"
+    }
+  },
+  "font": {
+    "heading": {
+      "$value": "\"Fira Code\", monospace",
+      "$type": "fontFamily"
+    },
+    "body": {
+      "$value": "\"Fira Sans\", sans-serif",
+      "$type": "fontFamily"
+    }
+  },
+  "semantic": {
+    "color": {
+      "primary": {
+        "$value": "{color.primary}",
+        "$type": "color"
+      },
+      "on-primary": {
+        "$value": "{color.on-primary}",
+        "$type": "color"
+      },
+      "secondary": {
+        "$value": "{color.secondary}",
+        "$type": "color"
+      },
+      "on-secondary": {
+        "$value": "{color.on-secondary}",
+        "$type": "color"
+      },
+      "accent": {
+        "$value": "{color.accent}",
+        "$type": "color"
+      },
+      "on-accent": {
+        "$value": "{color.on-accent}",
+        "$type": "color"
+      },
+      "background": {
+        "$value": "{color.background}",
+        "$type": "color"
+      },
+      "foreground": {
+        "$value": "{color.foreground}",
+        "$type": "color"
+      },
+      "card": {
+        "$value": "{color.card}",
+        "$type": "color"
+      },
+      "card-foreground": {
+        "$value": "{color.card-foreground}",
+        "$type": "color"
+      },
+      "muted": {
+        "$value": "{color.muted}",
+        "$type": "color"
+      },
+      "muted-foreground": {
+        "$value": "{color.muted-foreground}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.border}",
+        "$type": "color"
+      },
+      "destructive": {
+        "$value": "{color.destructive}",
+        "$type": "color"
+      },
+      "on-destructive": {
+        "$value": "{color.on-destructive}",
+        "$type": "color"
+      },
+      "ring": {
+        "$value": "{color.ring}",
+        "$type": "color"
+      }
+    },
+    "font": {
+      "heading": {
+        "$value": "{font.heading}",
+        "$type": "fontFamily"
+      },
+      "body": {
+        "$value": "{font.body}",
+        "$type": "fontFamily"
+      }
+    }
+  }
+}
+[exit 0]
+
+$ grep -n -i token /tmp/demo-run/design-system/ledgerly/MASTER.md
+12:**Token files:** `tokens.json` (W3C Design Tokens Community Group JSON).
+13:Token files are master-level only; `--page` overrides do not emit tokens.
+56:| Token | Value | Usage |
+[exit 0]
+
+$ node cli/assets/skills/design-system/scripts/generate-tokens.cjs --config /tmp/demo-run/design-system/ledgerly/tokens.json -o /tmp/demo-run/from-cjs.css
+Generated: /tmp/demo-run/from-cjs.css
+[exit 0]
+
+$ diff -u /tmp/demo-run/tokens-css.css /tmp/demo-run/from-cjs.css
+[exit 0]
+
+$ python3 src/ui-ux-pro-max/scripts/search.py "dark mode developer tool" --design-system --tokens dtcg
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "$description": "Design tokens for DARK MODE DEVELOPER TOOL (dark mode).",
+  "color": {
+    "primary": {
+      "$value": "#1E293B",
+      "$type": "color"
+    },
+    "on-primary": {
+      "$value": "#FFFFFF",
+      "$type": "color"
+    },
+    "secondary": {
+      "$value": "#334155",
+      "$type": "color"
+    },
+    "on-secondary": {
+      "$value": "#FFFFFF",
+      "$type": "color"
+    },
+    "accent": {
+      "$value": "#22C55E",
+      "$type": "color"
+    },
+    "on-accent": {
+      "$value": "#0F172A",
+      "$type": "color"
+    },
+    "background": {
+      "$value": "#0F172A",
+      "$type": "color"
+    },
+    "foreground": {
+      "$value": "#F8FAFC",
+      "$type": "color"
+    },
+    "card": {
+      "$value": "#1B2336",
+      "$type": "color"
+    },
+    "card-foreground": {
+      "$value": "#F8FAFC",
+      "$type": "color"
+    },
+    "muted": {
+      "$value": "#272F42",
+      "$type": "color"
+    },
+    "muted-foreground": {
+      "$value": "#94A3B8",
+      "$type": "color"
+    },
+    "border": {
+      "$value": "#475569",
+      "$type": "color"
+    },
+    "destructive": {
+      "$value": "#EF4444",
+      "$type": "color"
+    },
+    "on-destructive": {
+      "$value": "#000000",
+      "$type": "color"
+    },
+    "ring": {
+      "$value": "#FFFFFF",
+      "$type": "color"
+    }
+  },
+  "font": {
+    "heading": {
+      "$value": "\"JetBrains Mono\", monospace",
+      "$type": "fontFamily"
+    },
+    "body": {
+      "$value": "\"IBM Plex Sans\", sans-serif",
+      "$type": "fontFamily"
+    }
+  },
+  "semantic": {
+    "color": {
+      "primary": {
+        "$value": "{color.primary}",
+        "$type": "color"
+      },
+      "on-primary": {
+        "$value": "{color.on-primary}",
+        "$type": "color"
+      },
+      "secondary": {
+        "$value": "{color.secondary}",
+        "$type": "color"
+      },
+      "on-secondary": {
+        "$value": "{color.on-secondary}",
+        "$type": "color"
+      },
+      "accent": {
+        "$value": "{color.accent}",
+        "$type": "color"
+      },
+      "on-accent": {
+        "$value": "{color.on-accent}",
+        "$type": "color"
+      },
+      "background": {
+        "$value": "{color.background}",
+        "$type": "color"
+      },
+      "foreground": {
+        "$value": "{color.foreground}",
+        "$type": "color"
+      },
+      "card": {
+        "$value": "{color.card}",
+        "$type": "color"
+      },
+      "card-foreground": {
+        "$value": "{color.card-foreground}",
+        "$type": "color"
+      },
+      "muted": {
+        "$value": "{color.muted}",
+        "$type": "color"
+      },
+      "muted-foreground": {
+        "$value": "{color.muted-foreground}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.border}",
+        "$type": "color"
+      },
+      "destructive": {
+        "$value": "{color.destructive}",
+        "$type": "color"
+      },
+      "on-destructive": {
+        "$value": "{color.on-destructive}",
+        "$type": "color"
+      },
+      "ring": {
+        "$value": "{color.ring}",
+        "$type": "color"
+      }
+    },
+    "font": {
+      "heading": {
+        "$value": "{font.heading}",
+        "$type": "fontFamily"
+      },
+      "body": {
+        "$value": "{font.body}",
+        "$type": "fontFamily"
+      }
+    }
+  }
+}
+[exit 0]
+
+$ python3 src/ui-ux-pro-max/scripts/search.py "dark mode developer tool" --design-system --tokens css
+/* Design Tokens - Auto-generated */
+/* Do not edit directly - modify tokens.json instead */
+
+/* === PRIMITIVES === */
+:root {
+
+}
+
+/* === SEMANTIC === */
+:root {
+  --color-primary: #1E293B;
+  --color-on-primary: #FFFFFF;
+  --color-secondary: #334155;
+  --color-on-secondary: #FFFFFF;
+  --color-accent: #22C55E;
+  --color-on-accent: #0F172A;
+  --color-background: #0F172A;
+  --color-foreground: #F8FAFC;
+  --color-card: #1B2336;
+  --color-card-foreground: #F8FAFC;
+  --color-muted: #272F42;
+  --color-muted-foreground: #94A3B8;
+  --color-border: #475569;
+  --color-destructive: #EF4444;
+  --color-on-destructive: #000000;
+  --color-ring: #FFFFFF;
+  --font-heading: "JetBrains Mono", monospace;
+  --font-body: "IBM Plex Sans", sans-serif;
+}
+
+/* === COMPONENTS === */
+:root {
+
+}
+[exit 0]
+
+$ python3 src/ui-ux-pro-max/scripts/search.py "fintech dashboard" --tokens dtcg
+usage: search.py [-h]
+                 [--domain {style,color,chart,landing,product,ux,typography,icons,gsap,react,web,google-fonts}]
+                 [--rtl [LEVEL]]
+                 [--stack {react,nextjs,vue,svelte,astro,swiftui,react-native,flutter,nuxtjs,nuxt-ui,html-tailwind,shadcn,jetpack-compose,threejs,angular,laravel,javafx,wpf,winui,avalonia,uno,uwp}]
+                 [--max-results 1-20] [--json] [--full] [--design-system]
+                 [--project-name PROJECT_NAME] [--format {ascii,markdown}]
+                 [--persist] [--page PAGE] [--output-dir OUTPUT_DIR] [--force]
+                 [--tokens {dtcg,css}] [--variance 1-10] [--motion 1-10]
+                 [--density 1-10]
+                 query
+search.py: error: --tokens requires --design-system
+[exit 2]
+

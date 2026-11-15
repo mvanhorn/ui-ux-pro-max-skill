@@ -1,0 +1,5 @@
+
+> ui-ux-pro-max-cli@2.5.0 build
+> node scripts/build.mjs
+
+bun not found; falling back to TypeScript compiler output.

@@ -1,0 +1,186 @@
+
+> ui-ux-pro-max-cli@2.5.0 verify:data
+> npm run validate:csv && npm run validate:semantic && npm run validate:agent-guide && npm run validate:catalog-summary && npm run test:python && npm run evaluate:relevance && npm run smoke:domains && npm run smoke:stacks && npm run check:assets
+
+
+> ui-ux-pro-max-cli@2.5.0 validate:csv
+> cd .. && node cli/scripts/run-python.mjs scripts/validate-csv.py
+
+CSV validation passed: 35 runtime CSV files checked.
+
+> ui-ux-pro-max-cli@2.5.0 validate:semantic
+> cd .. && node cli/scripts/run-python.mjs src/ui-ux-pro-max/scripts/validate_data.py
+
+OK: validated 12 domain files, 22 stack files, and ui-reasoning.csv
+
+> ui-ux-pro-max-cli@2.5.0 validate:agent-guide
+> cd .. && node cli/scripts/run-python.mjs scripts/validate-agent-guide.py
+
+Agent guide validation passed: 25 platforms and 3 locked examples checked.
+
+> ui-ux-pro-max-cli@2.5.0 validate:catalog-summary
+> cd .. && node cli/scripts/run-python.mjs scripts/generate-catalog-summary.py --check
+
+Catalog summary is current.
+
+> ui-ux-pro-max-cli@2.5.0 test:python
+> cd .. && node cli/scripts/run-python.mjs -m unittest discover -s src/ui-ux-pro-max/scripts/tests -p "test_*.py"
+
+......................................................................................................................................................................................................
+----------------------------------------------------------------------
+Ran 198 tests in 6.113s
+
+OK
+
+> ui-ux-pro-max-cli@2.5.0 evaluate:relevance
+> cd .. && node cli/scripts/run-python.mjs scripts/evaluate-relevance.py
+
+{
+  "metrics": {
+    "designSystemCoherence": 1.0,
+    "mrrAt3": 0.868421052631579,
+    "ndcgAt3": 0.861015560539328,
+    "negativeAbstention": 0.9803921568627451,
+    "precisionAt1": 0.8157894736842105,
+    "precisionAt3": 0.3815789473684211,
+    "routingAccuracy": 1.0,
+    "typoRecoveryAt3": 1.0
+  },
+  "samples": {
+    "cases": 90,
+    "designSystem": 8,
+    "domain:chart": 2,
+    "domain:color": 2,
+    "domain:google-fonts": 2,
+    "domain:gsap": 2,
+    "domain:icons": 2,
+    "domain:landing": 2,
+    "domain:product": 2,
+    "domain:react": 2,
+    "domain:style": 2,
+    "domain:typography": 2,
+    "domain:ux": 2,
+    "domain:web": 2,
+    "negativeChecks": 204,
+    "retrieval": 76,
+    "routing": 8,
+    "stack:angular": 2,
+    "stack:astro": 2,
+    "stack:avalonia": 2,
+    "stack:flutter": 2,
+    "stack:html-tailwind": 2,
+    "stack:javafx": 2,
+    "stack:jetpack-compose": 2,
+    "stack:laravel": 2,
+    "stack:nextjs": 2,
+    "stack:nuxt-ui": 2,
+    "stack:nuxtjs": 2,
+    "stack:react": 2,
+    "stack:react-native": 2,
+    "stack:shadcn": 2,
+    "stack:svelte": 2,
+    "stack:swiftui": 2,
+    "stack:threejs": 2,
+    "stack:uno": 2,
+    "stack:uwp": 2,
+    "stack:vue": 2,
+    "stack:winui": 2,
+    "stack:wpf": 2,
+    "typo": 5
+  },
+  "splits": {
+    "calibration": {
+      "metrics": {
+        "designSystemCoherence": 1.0,
+        "mrrAt3": 0.9316239316239316,
+        "ndcgAt3": 0.9182517276204706,
+        "negativeAbstention": 1.0,
+        "precisionAt1": 0.8974358974358975,
+        "precisionAt3": 0.40170940170940167,
+        "routingAccuracy": 1.0,
+        "typoRecoveryAt3": 0.0
+      },
+      "samples": {
+        "cases": 46,
+        "designSystem": 4,
+        "negativeChecks": 102,
+        "retrieval": 39,
+        "routing": 5,
+        "typo": 0
+      }
+    },
+    "held_out": {
+      "metrics": {
+        "designSystemCoherence": 1.0,
+        "mrrAt3": 0.8018018018018018,
+        "ndcgAt3": 0.8006855465889345,
+        "negativeAbstention": 0.9607843137254902,
+        "precisionAt1": 0.7297297297297297,
+        "precisionAt3": 0.36036036036036034,
+        "routingAccuracy": 1.0,
+        "typoRecoveryAt3": 1.0
+      },
+      "samples": {
+        "cases": 44,
+        "designSystem": 4,
+        "negativeChecks": 102,
+        "retrieval": 37,
+        "routing": 3,
+        "typo": 5
+      }
+    }
+  }
+}
+
+> ui-ux-pro-max-cli@2.5.0 smoke:domains
+> cd .. && bash scripts/smoke-domains.sh
+
+Smoke-testing 12 domains with focused probes:
+  PASS  style          1
+  PASS  color          1
+  PASS  chart          1
+  PASS  landing        1
+  PASS  product        1
+  PASS  ux             1
+  PASS  typography     1
+  PASS  icons          1
+  PASS  gsap           1
+  PASS  react          1
+  PASS  web            1
+  PASS  google-fonts   1
+
+OK: 12/12 domains returned ≥1 result
+
+> ui-ux-pro-max-cli@2.5.0 smoke:stacks
+> cd .. && bash scripts/smoke-stacks.sh
+
+Smoke-testing 22 stacks with focused probes:
+  PASS  react              1
+  PASS  nextjs             1
+  PASS  vue                1
+  PASS  svelte             1
+  PASS  astro              1
+  PASS  swiftui            1
+  PASS  react-native       1
+  PASS  flutter            1
+  PASS  nuxtjs             1
+  PASS  nuxt-ui            1
+  PASS  html-tailwind      1
+  PASS  shadcn             1
+  PASS  jetpack-compose    1
+  PASS  threejs            1
+  PASS  angular            1
+  PASS  laravel            1
+  PASS  javafx             1
+  PASS  wpf                1
+  PASS  winui              1
+  PASS  avalonia           1
+  PASS  uno                1
+  PASS  uwp                1
+
+OK: 22/22 stacks returned ≥1 result
+
+> ui-ux-pro-max-cli@2.5.0 check:assets
+> node scripts/sync-assets.mjs --check
+
+Assets are in sync.

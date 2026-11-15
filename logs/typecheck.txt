@@ -1,0 +1,4 @@
+
+> ui-ux-pro-max-cli@2.5.0 typecheck
+> tsc --noEmit
+
